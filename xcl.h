@@ -48,6 +48,48 @@ namespace xcl
 
 	template<class T>
 	concept copy_constructible = std::copy_constructible<T>;
+
+	template<class T>
+	concept equality_comparable = std::equality_comparable<T>;
+
+	template<class T, class U>
+	concept equality_comparable_with = std::equality_comparable_with<T, U>;
+
+	template<class T>
+	concept totally_ordered = std::totally_ordered<T>;
+
+	template<class T, class U>
+	concept totally_ordered_with = std::totally_ordered_with<T, U>;
+
+	template<class T>
+	concept movable = std::movable<T>;
+
+	template<class T>
+	concept copyable = std::copyable<T>;
+
+	template<class T>
+	concept semiregular = std::semiregular<T>;
+
+	template<class T>
+	concept regular = std::regular<T>;
+
+	template<class F, class ...Args>
+	concept invocable = std::invocable<F, Args...>;
+
+	template<class F, class ...Args>
+	concept regular_invocable = std::regular_invocable<F, Args...>;
+
+	template<class F, class ...Args>
+	concept predicate = std::predicate<F, Args...>;
+
+	template<class R, class T, class U>
+	concept relation = std::relation<R, T, U>;
+
+	template<class R, class T, class U>
+	concept equivalence_relation = std::equivalence_relation<R, T, U>;
+
+	template<class R, class T, class U>
+	concept strict_weak_order = std::strict_weak_order<R, T, U>;
 #pragma endregion
 
 	template<class T>
