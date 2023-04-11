@@ -5,7 +5,7 @@ namespace xcl
 	concept integral = std::is_integral_v<T>;
 
 	template<typename T>
-	concept enumerable = std::is_enum_v<T>;
+	concept enumeration = std::is_enum_v<T>;
 
 	template<typename T1, typename T2>
 	concept different_from = !std::is_same_v<T1, T2>;
